@@ -1,0 +1,209 @@
+/* =====================================================
+   ZUKAL STUDIO – Global Styles
+   ===================================================== */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------- CSS Custom Properties ---------- */
+:root {
+  --green:   #A8E320;
+  --dark:    #141414;
+  --card:    #1C1C1C;
+  --muted:   #2A2A2A;
+  --text:    #E8E8E8;
+  --dim:     #888888;
+  --radius:  12px;
+}
+
+/* ---------- Base Reset ---------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* Custom scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: var(--green) var(--dark);
+}
+
+::-webkit-scrollbar        { width: 6px; }
+::-webkit-scrollbar-track  { background: var(--dark); }
+::-webkit-scrollbar-thumb  { background: var(--green); border-radius: 3px; }
+
+body {
+  background-color: var(--dark);
+  color: var(--text);
+  font-family: 'Satoshi', sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* ---------- Typography Helpers ---------- */
+.font-display { font-family: 'Clash Display', sans-serif; }
+
+/* Gradient text utility */
+.text-gradient {
+  background: linear-gradient(135deg, var(--green) 0%, #d4f76e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ---------- Reusable Components ---------- */
+
+/* Green glow on elements */
+.glow {
+  box-shadow: 0 0 30px rgba(168, 227, 32, 0.25);
+}
+
+/* Card surface */
+.card {
+  background: var(--card);
+  border: 1px solid var(--muted);
+  border-radius: var(--radius);
+}
+
+/* Primary button */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--green);
+  color: var(--dark);
+  font-family: 'Clash Display', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 14px 28px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(168, 227, 32, 0.4);
+}
+
+/* Outline button */
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  color: var(--green);
+  font-family: 'Clash Display', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 13px 28px;
+  border-radius: 50px;
+  border: 1.5px solid var(--green);
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+.btn-outline:hover {
+  background: var(--green);
+  color: var(--dark);
+}
+
+/* Section wrapper */
+.section {
+  padding: 100px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Section label / eyebrow */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--green);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.eyebrow::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--green);
+  flex-shrink: 0;
+}
+
+/* Noise texture overlay */
+.noise::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Grid lines decoration */
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(168,227,32,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(168,227,32,0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* Animated underline */
+.link-hover {
+  position: relative;
+  text-decoration: none;
+}
+
+.link-hover::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background: var(--green);
+  transition: width 0.3s ease;
+}
+
+.link-hover:hover::after { width: 100%; }
+
+/* ---------- Utility animations ---------- */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-12px); }
+}
+
+.animate-float { animation: float 4s ease-in-out infinite; }
+
+/* Staggered fade-up delays */
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
+
+/* ---------- Responsive helpers ---------- */
+@media (max-width: 768px) {
+  .section { padding: 70px 0; }
+  .container { padding: 0 16px; }
+}
