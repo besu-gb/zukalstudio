@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Zukal Studio | Creative Agency",
     description: "Growing Ethiopian businesses through digital creativity.",
-    images: ["/social.png"],
+    images: ["/main.png"],
   },
 };
 
