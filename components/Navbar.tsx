@@ -49,7 +49,7 @@ export default function Navbar() {
         {/* ── Logo ── */}
         <Link href="/" className="flex items-center gap-3 group">
           <Image
-            src="/logo.jpg"
+            src="/favicon.png"
             alt="Zukal Studio Logo"
             width={44}
             height={44}
