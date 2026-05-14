@@ -21,10 +21,13 @@ export const metadata: Metadata = {
     "social media management Ethiopia",
     "content creation Addis Ababa",
   ],
+  icons: {
+    icon: '/favicon.png',
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://zukalstudio.com",
+    url: "https://zukalstudio.vercel.app",
     siteName: "Zukal Studio",
     title: "Zukal Studio | Creative Agency — Ethiopia",
     description:

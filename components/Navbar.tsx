@@ -8,13 +8,13 @@ import { Menu, X } from "lucide-react";
 
 /* Navigation links used in both desktop and mobile menus */
 const NAV_LINKS = [
-  { href: "/",          label: "Home" },
-  { href: "/about",     label: "About" },
+  { href: "/", label: "Home" },
+  { href: "/about", label: "About" },
   { href: "/solutions", label: "Solutions" },
-  { href: "/projects",  label: "Projects" },
-  { href: "/pricing",   label: "Pricing" },
-  { href: "/blog",      label: "Blog" },
-  { href: "/contact",   label: "Contact" },
+  { href: "/projects", label: "Projects" },
+  { href: "/pricing", label: "Pricing" },
+  { href: "/blog", label: "Blog" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export default function Navbar() {
@@ -46,18 +46,18 @@ export default function Navbar() {
       }`}
     >
       <div className="container flex items-center justify-between h-20">
-
         {/* ── Logo ── */}
         <Link href="/" className="flex items-center gap-3 group">
           <Image
-            src="/zukal_logo.jpg"
+            src="/logo.jpg"
             alt="Zukal Studio Logo"
             width={44}
             height={44}
             className="rounded-lg group-hover:scale-105 transition-transform duration-200"
           />
           <span className="font-display font-semibold text-[var(--text)] text-lg leading-tight hidden sm:block">
-            Zukal<br />
+            Zukal
+            <br />
             <span className="text-[var(--green)]">Studio</span>
           </span>
         </Link>
