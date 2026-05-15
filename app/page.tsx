@@ -109,7 +109,7 @@ export default function HomePage() {
       {/* ════════════════════════════════════════════
           HERO SECTION
       ════════════════════════════════════════════ */}
-      <section className="relative min-h-screen flex items-center grid-bg overflow-hidden">
+      <section className="relative min-h-screen mt-10 flex items-center grid-bg overflow-hidden">
         {/* Decorative blobs */}
         <div
           aria-hidden="true"
@@ -202,7 +202,7 @@ export default function HomePage() {
         </div>
 
         {/* Scroll hint */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce">
+        <div className="absolute bottom-8 left-[45%] -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce">
           <p className="text-[var(--dim)] text-xs font-mono tracking-widest">
             SCROLL
           </p>

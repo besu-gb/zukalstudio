@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 };
 
 const FEATURED = {
+  slug: "5-reasons-ethiopian-business-website-2025",
   title: "5 Reasons Your Ethiopian Business Needs a Website in 2025",
   excerpt:
     "In 2025, not having a website means losing customers to competitors who do. We break down exactly why every Ethiopian SMB needs to be online — and how to start.",
@@ -22,6 +23,7 @@ const FEATURED = {
 
 const POSTS = [
   {
+    slug: "grow-instagram-following-ethiopian-business",
     title: "How to Grow Your Instagram Following as an Ethiopian Business",
     excerpt:
       "A step-by-step guide to building a real, engaged audience on Instagram — written specifically for Ethiopian brands.",
@@ -32,6 +34,7 @@ const POSTS = [
     color: "#A8E320",
   },
   {
+    slug: "good-business-website-7-must-have-features",
     title: "What Makes a Good Business Website? 7 Must-Have Features",
     excerpt:
       "Not all websites are equal. Here are the 7 things every business website needs to actually bring in customers.",
@@ -42,6 +45,7 @@ const POSTS = [
     color: "#90D410",
   },
   {
+    slug: "content-marketing-ethiopian-smbs-where-to-start",
     title: "Content Marketing for Ethiopian SMBs: Where to Start",
     excerpt:
       "Content marketing sounds complex, but it doesn't have to be. Here's a simple starting guide for small businesses in Ethiopia.",
@@ -52,6 +56,7 @@ const POSTS = [
     color: "#B8F050",
   },
   {
+    slug: "facebook-vs-instagram-which-platform-best",
     title: "Facebook vs Instagram: Which Platform is Best for Your Business?",
     excerpt:
       "Both platforms work, but one might be better for your specific business. We break down the difference.",
@@ -62,6 +67,7 @@ const POSTS = [
     color: "#A8E320",
   },
   {
+    slug: "write-website-that-converts",
     title: "How to Write a Website That Converts Visitors into Customers",
     excerpt:
       "Great design gets people to stay. Great copy gets them to act. Learn the basics of conversion copywriting.",
@@ -72,6 +78,7 @@ const POSTS = [
     color: "#C8F240",
   },
   {
+    slug: "local-seo-appear-google-maps",
     title: "Local SEO: How to Get Your Business to Appear on Google Maps",
     excerpt:
       "When someone searches for your type of business in Addis Ababa, you want to show up first. Here's how.",
@@ -158,7 +165,7 @@ export default function BlogPage() {
                       <Clock size={11} /> {FEATURED.readTime}
                     </span>
                   </div>
-                  <Link href="/blog/post" className="btn-primary">
+                  <Link href={`/blog/${FEATURED.slug}`} className="btn-primary">
                     Read Article <ArrowRight size={15} />
                   </Link>
                 </div>
@@ -192,11 +199,14 @@ export default function BlogPage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {POSTS.map(
               (
-                { title, excerpt, category, date, readTime, initial, color },
+                { slug, title, excerpt, category, date, readTime, initial, color },
                 i,
               ) => (
                 <SectionReveal key={title} delay={(i % 3) * 80}>
-                  <div className="card p-6 hover:border-[var(--green)]/40 hover:-translate-y-1 transition-all duration-300 group cursor-pointer flex flex-col h-full">
+                  <Link
+                    href={`/blog/${slug}`}
+                    className="card p-6 hover:border-[var(--green)]/40 hover:-translate-y-1 transition-all duration-300 group cursor-pointer flex flex-col h-full"
+                  >
                     {/* Thumbnail */}
                     <div
                       className="h-32 rounded-xl flex items-center justify-center text-3xl font-bold font-display mb-5"
@@ -230,7 +240,7 @@ export default function BlogPage() {
                         className="opacity-0 group-hover:opacity-100 transition-opacity"
                       />
                     </div>
-                  </div>
+                  </Link>
                 </SectionReveal>
               ),
             )}
