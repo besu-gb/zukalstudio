@@ -322,8 +322,7 @@ export default function PricingPage() {
               Ongoing Support Packages
             </h2>
             <p className="text-[var(--dim)] max-w-lg mb-12">
-              Need consistent help every month? These retainer packages keep
-              your digital presence fresh and growing continuously.
+              For businesses that need regular updates, maintenance. Our monthly retainers give you ongoing support without the hassle of hiring in house.
             </p>
           </SectionReveal>
 
@@ -354,18 +353,6 @@ export default function PricingPage() {
             ))}
           </div>
 
-          <SectionReveal delay={400}>
-            <p className="text-center text-[var(--dim)] text-sm mt-8">
-              All prices listed in Ethiopian Birr (ETB). USD pricing available
-              on request.{" "}
-              <Link
-                href="/contact"
-                className="text-[var(--green)] hover:underline"
-              >
-                Contact us for a custom quote.
-              </Link>
-            </p>
-          </SectionReveal>
         </div>
       </section>
 
