@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CursorGlow from "@/components/CursorGlow";
+import Script from "next/script";
 
 /* -------------------------------------------------------
    Root metadata — used for SEO and social sharing
