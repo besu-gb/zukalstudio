@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     default: "Zukal Studio | Creative Agency — Ethiopia",
     template: "%s | Zukal Studio",
   },
+  verification: {
+    google: "c30B9NAvvYwg_g1ks7s6uyCwKQ7h9T9HyWyW_18Efu8",
+  },
   description:
     "Zukal Studio is an Ethiopian creative agency specializing in web solutions, content creation, and social media management for small and medium businesses.",
   keywords: [
@@ -22,7 +25,7 @@ export const metadata: Metadata = {
     "content creation Addis Ababa",
   ],
   icons: {
-    icon: '/favicon.png',
+    icon: "/favicon.png",
   },
   openGraph: {
     type: "website",
