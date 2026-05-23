@@ -23,7 +23,7 @@ const PLANS = [
     icon: Zap,
     name: "Starter",
     tag: "For businesses that need visibility",
-    price: "4,000",
+    price: "10,000",
     unit: "ETB / month",
     description:
       "Perfect for businesses that want to stay active online with professional content that attracts customers and builds trust.",
@@ -46,7 +46,7 @@ const PLANS = [
     icon: Shield,
     name: "Growth",
     tag: "Most Powerful & Recommended",
-    price: "12,000",
+    price: "20,000",
     unit: "ETB / month",
     description:
       "The perfect package for real business growth. You get a professional website + consistent content creation.",
@@ -97,32 +97,32 @@ const PLANS = [
 const RETAINERS = [
   {
     name: "Landing Page",
-    price: "5,000",
+    price: "8,000",
     desc: "Single page website with contact form and basic SEO setup.",
   },
   {
     name: "Portfolio Website",
-    price: "7,000",
+    price: "10,000",
     desc: "Multi-page personal site to show skills and projects clearly.",
   },
   {
     name: "Personal Brand Website",
-    price: "10,000",
+    price: "14,000",
     desc: "Website for personal identity with services and contact section.",
   },
   {
     name: "Business Website",
-    price: "12,000",
+    price: "18,000",
     desc: "Company website with admin tools, forms and SEO setup included.",
   },
   {
     name: "Blog Website",
-    price: "15,000",
+    price: "24,000",
     desc: "Website to publish posts with login and content management system.",
   },
   {
     name: "Admin Dashboard",
-    price: "20,000",
+    price: "30,000",
     desc: "Control panel with charts, data view and user management tools.",
   },
   {
@@ -132,7 +132,7 @@ const RETAINERS = [
   },
   {
     name: "Booking Website",
-    price: "40,000",
+    price: "46,000",
     desc: "System to handle bookings, schedules and availability management.",
   },
   {
