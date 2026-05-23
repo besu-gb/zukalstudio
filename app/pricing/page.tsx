@@ -344,9 +344,6 @@ export default function PricingPage() {
                         {price}
                       </span>{" "}
                       ETB
-                      <span className="text-sm text-[var(--dim)] font-normal">
-                        /mo
-                      </span>
                     </span>
                   </p>
                   <p className="text-[var(--dim)] text-sm leading-relaxed pt-4">
