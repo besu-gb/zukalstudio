@@ -24,7 +24,7 @@ const PLANS = [
     name: "Starter",
     tag: "For businesses that need visibility",
     price: "10,000",
-    unit: "ETB / month",
+    unit: "ETB",
     description:
       "Perfect for businesses that want to stay active online with professional content that attracts customers and builds trust.",
     features: [
@@ -47,7 +47,7 @@ const PLANS = [
     name: "Growth",
     tag: "Most Powerful & Recommended",
     price: "20,000",
-    unit: "ETB / month",
+    unit: "ETB",
     description:
       "The perfect package for real business growth. You get a professional website + consistent content creation.",
     features: [
@@ -72,7 +72,7 @@ const PLANS = [
     name: "Full Digital Solution",
     tag: "For serious brands & long-term growth",
     price: "Custom",
-    unit: "ETB / month",
+    unit: "ETB",
     description:
       "A complete digital system for businesses that want full control of their online presence.",
     features: [
