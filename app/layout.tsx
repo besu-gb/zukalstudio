@@ -66,6 +66,19 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap"
           rel="stylesheet"
         />
+         <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-16ZJJNVKFW"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-16ZJJNVKFW');
+          `}
+        </Script>
       </head>
       <body>
         {/* Ambient cursor glow — adds interactive feel */}
