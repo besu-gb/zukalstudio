@@ -50,29 +50,29 @@ const SERVICES = [
 ];
 
 const STATS = [
-  { icon: Users, value: "10+", label: "Happy Clients" },
-  { icon: Rocket, value: "10+", label: "Projects Delivered" },
-  { icon: Award, value: "1+", label: "Years Experience" },
-  { icon: Zap, value: "100%", label: "Client Satisfaction" },
+  { icon: Users, value: "0+", label: "Happy Clients" },
+  { icon: Rocket, value: "0+", label: "Projects Delivered" },
+  { icon: Award, value: "0+", label: "Years Experience" },
+  { icon: Zap, value: "0%", label: "Client Satisfaction" },
 ];
 
 const TESTIMONIALS = [
   {
-    name: "Mekdes Alemu",
-    role: "Owner, Mekdes Boutique",
-    text: "Zukal Studio completely transformed our online presence. Our website now gets real inquiries every week. Highly recommend!",
+    name: "Besukal gobena",
+    role: "Founder of Zukal",
+    text: "Zukal Studio is the most creative agency in ethiopia so if you try it you will get best result.",
     stars: 5,
   },
   {
-    name: "Berhane Tadesse",
-    role: "CEO, Tadesse Trading",
-    text: "They understood exactly what we needed. Professional, creative, and always on time. Our social media following tripled in 3 months.",
+    name: "Daniel wendimu",
+    role: "Video editor at Zukal",
+    text: "We will make your visuals and videos more better and cathcy than your competitors",
     stars: 5,
   },
   {
-    name: "Hiwot Girma",
-    role: "Founder, HG Cosmetics",
-    text: "Working with Zukal was the best decision for our brand. The content they create is always on point and our customers love it.",
+    name: "Aynalem akeberegn",
+    role: "Social media marketer at Zukal",
+    text: "We will make your social media more engaging and grow your audience faster than you ever thought possible.",
     stars: 5,
   },
 ];
@@ -189,7 +189,7 @@ export default function HomePage() {
                 </div>
                 <p className="text-sm text-[var(--dim)]">
                   <span className="text-[var(--text)] font-semibold">
-                    10+ businesses
+                    0+ businesses
                   </span>{" "}
                   trust us
                 </p>
@@ -376,7 +376,7 @@ export default function HomePage() {
                     {[
                       {
                         label: "Projects Completed",
-                        value: "10+",
+                        value: "0+",
                         color: "#A8E320",
                       },
                       {

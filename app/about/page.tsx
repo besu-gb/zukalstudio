@@ -71,7 +71,7 @@ const MILESTONES = [
   {
     year: "2025",
     event:
-      "Expanded to a full creative agency online contractors, 10+ projects delivered.",
+      "Expanded to a full creative agency online contractors, 0+ projects delivered.",
   },
   {
     year: "2025",

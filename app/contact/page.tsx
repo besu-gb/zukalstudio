@@ -22,14 +22,14 @@ const CONTACT_INFO = [
   {
     icon: Mail,
     label: "Email Us",
-    value: "hello@zukalstudio.com",
-    href: "mailto:hello@zukalstudio.com",
+    value: "zukalstudio@gmail.com",
+    href: "mailto:zukalstudio@gmail.com",
   },
   {
     icon: Phone,
     label: "Call or WhatsApp",
-    value: "+251 911 234 567",
-    href: "https://wa.me/251911234567",
+    value: "+251 972115853",
+    href: "https://wa.me/251972115853",
   },
   {
     icon: MapPin,
