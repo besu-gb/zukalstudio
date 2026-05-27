@@ -247,37 +247,6 @@ export default function BlogPage() {
           </div>
         </div>
       </section>
-
-      {/* ── Newsletter ── */}
-      <section className="section">
-        <div className="container">
-          <SectionReveal>
-            <div className="card p-10 md:p-16 rounded-2xl text-center border-[var(--green)]/20 bg-[var(--green)]/5">
-              <p className="eyebrow justify-center">Newsletter</p>
-              <h2 className="font-display font-bold text-3xl md:text-4xl text-[var(--text)] mb-4">
-                Get Weekly Digital Tips
-              </h2>
-              <p className="text-[var(--dim)] max-w-md mx-auto mb-8">
-                Join 1,000+ Ethiopian business owners who get practical digital
-                marketing tips straight to their inbox every week.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-                <input
-                  type="email"
-                  placeholder="Enter your email address"
-                  className="flex-1 bg-[var(--dark)] border border-[#2A2A2A] rounded-full px-5 py-3 text-[var(--text)] text-sm outline-none focus:border-[var(--green)] transition-colors"
-                />
-                <button className="btn-primary whitespace-nowrap">
-                  Subscribe <ArrowRight size={15} />
-                </button>
-              </div>
-              <p className="text-[var(--dim)] text-xs mt-4">
-                No spam. Unsubscribe anytime.
-              </p>
-            </div>
-          </SectionReveal>
-        </div>
-      </section>
     </>
   );
 }

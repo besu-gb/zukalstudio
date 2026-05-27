@@ -516,7 +516,7 @@ export default function HomePage() {
                     href="/contact"
                     className="btn-primary text-base px-10 py-4"
                   >
-                    Get a Free Consultation <ArrowRight size={18} />
+                    Let's Start <ArrowRight size={18} />
                   </Link>
                   <Link
                     href="/pricing"

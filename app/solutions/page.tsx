@@ -142,7 +142,7 @@ export default function SolutionsPage() {
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/contact" className="btn-primary">
-                Get a Free Quote <ArrowRight size={16} />
+                Let's Start <ArrowRight size={16} />
               </Link>
               <Link href="/pricing" className="btn-outline">
                 See Pricing
@@ -229,7 +229,7 @@ export default function SolutionsPage() {
               what your business needs to grow.
             </p>
             <Link href="/contact" className="btn-primary text-base px-10 py-4">
-              Book Free Consultation <ArrowRight size={18} />
+              Try Our Solution <ArrowRight size={18} />
             </Link>
           </SectionReveal>
         </div>

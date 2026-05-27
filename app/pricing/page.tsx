@@ -404,7 +404,7 @@ export default function PricingPage() {
               exactly what your business needs.
             </p>
             <Link href="/contact" className="btn-primary text-base px-10 py-4">
-              Book Free Consultation <ArrowRight size={18} />
+              Try Our Solution <ArrowRight size={18} />
             </Link>
           </SectionReveal>
         </div>
