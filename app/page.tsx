@@ -129,7 +129,7 @@ export default function HomePage() {
         <div className="container flex items-center justify-between relative z-10 pt-28 pb-20">
           <div className="max-w-4xl mt-5 mb-5">
             {/* Eyebrow badge */}
-            <div className="inline-flex items-center gap-2 bg-[var(--green)]/10 border border-[var(--green)]/30 rounded-full px-4 py-2 mb-8">
+            <div className="inline-flex items-center gap-2 bg-[var(--green)]/10 px-4 py-2 mb-8">
               <span className="w-2 h-2 rounded-full bg-[var(--green)] animate-pulse" />
               <span className="text-[var(--green)] text-xs font-mono tracking-widest uppercase">
                 Ethiopia's Creative Agency
